@@ -7,7 +7,7 @@ Creates an Onion Address in a container that can be linked to from another conta
 
 ## How To Use
 
-There are 3 Environment Variables that must be set an onion address to be generated for your local service. 
+There are 3 Environment Variables that must be set for an onion address to be generated for your local service. 
 
 1. `SERVICE_HOST` - This must be a fully accessible local IP or hostname of a service you want to expose. Docker container names can also be used, but must be on the same docker network. 
 2. `SERVICE_PORT` - This is the port that the local service is running on that you want to pipe to an onion address. (ex.) You have a local simplex xftp server running on port 443 that you want to expose. So you set this ENV as 443.
