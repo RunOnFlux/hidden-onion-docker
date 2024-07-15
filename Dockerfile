@@ -22,6 +22,8 @@ RUN chown tor /torrc \
 
 # Set the entrypoint script and user
 ENTRYPOINT ["/entrypoint.sh"]
+
+# Set user as root to properly run on flux
 USER root
 
 # Define your CMD to start Tor with the specified configurations
